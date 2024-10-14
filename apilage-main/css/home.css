@@ -1,0 +1,439 @@
+#hero {
+    width: 100%;
+    height: 70vh;
+    margin-top: 70px;
+  }
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: black;
+  }
+  
+  #hero h2 {
+    color: #484848;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #9DBD86;
+    border: 2px solid #9DBD86;
+  }
+  
+  #hero .btn-get-started:hover {
+    background: #9DBD86;
+    color: #fff;
+  }
+  
+  #hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    #hero {
+      height: 100vh;
+    }
+  
+    #hero .animated {
+      animation: none;
+    }
+  
+    #hero .hero-img {
+      text-align: center;
+    }
+  
+    #hero .hero-img img {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero {
+      margin-top: 20px;
+    }
+  
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  
+    #hero .hero-img img {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #hero .hero-img img {
+      width: 80%;
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  
+  .bgp {
+    background-image: url('../assets/images/bp1.jpeg'); 
+    background-size: cover; /* Ensures the image covers the whole section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Optional: Makes the background stay fixed on scroll */
+
+
+  }
+
+  .bgp::before {
+    content: ""; /* Required for a pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    bottom: 0; /* Stretch to the bottom */
+    background-color: rgba(255, 255, 255, 0.618); /* White with 50% opacity */
+    /* You can adjust the color and opacity as needed */
+    z-index: 1; /* Ensure it appears above the background */
+}
+
+.bgp > * {
+    position: relative; /* Ensure child elements are above the overlay */
+    z-index: 2; /* Make sure content appears above the overlay */
+}
+
+  .main-header {
+    font-family: 'Cinzel', serif; /* Use the imported font */
+    font-weight: 900; /* You can adjust the weight as needed */
+    color: #fff;
+    
+  }
+
+#mh1 {
+    font-size:  48px;
+    color: #80be54;
+    /* text-shadow: 0 0 5px white, 0 0 5px white; */
+
+  }
+
+
+  #mh2 {
+    font-size:  52px;
+    color: #25633E;
+    /* text-shadow: 0 0 5px white, 0 0 5px white; */
+
+  }
+
+  #mh3 {
+    font-size:  48px;
+    color: #80be54;
+    /* text-shadow: 0 0 5px white, 0 0 5px white; */
+
+  }
+
+
+
+  
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .contact-about h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222222;
+  }
+  
+  .contact .contact-about p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Raleway", sans-serif;
+    color: #888;
+  }
+  
+  .contact .social-links {
+    padding-bottom: 20px;
+  }
+  
+  .contact .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #9DBD86;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #9DBD86;
+    text-decoration: none;
+  }
+  
+  .contact .social-links a:hover {
+    background: #9DBD86;
+    color: #fff;
+  }
+  
+  .contact .info {
+    color: #444444;
+  }
+  
+  .contact .info i {
+    font-size: 32px;
+    color: #9DBD86;
+    float: left;
+    line-height: 1;
+  }
+  
+  .contact .info p {
+    padding: 0 0 10px 42px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  
+  .contact .php-email-form input:focus,
+  .contact .php-email-form textarea:focus {
+    border-color: #9DBD86;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    background: #9DBD86;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+    background: #2383c4;
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f7fbfe;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #222222;
+  }
+  
+  .section-title h2::before,
+  .section-title h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #9DBD86;
+    display: inline-block;
+  }
+  
+  .section-title h2::before {
+    margin: 0 15px 10px 0;
+  }
+  
+  .section-title h2::after {
+    margin: 0 0 10px 15px;
+  }
+  
+  .section-title p {
+    margin: 15px 0 0 0;
+  }
+
+
+
+  .categories-fragrances {
+    border-radius: 50%;
+     background-color: #9DBD86; 
+     height: 250px;
+      width: 250px;
+  }
+
+/* Define the horizontal spin animation */
+@keyframes spin-horizontal {
+  0% {
+      transform: rotateY(0deg);
+  }
+  100% {
+      transform: rotateY(360deg);
+  }
+}
+
+#fruit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/images/fruit.png'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
+  background-size: 120px 120px; 
+  transition: transform 0.5s; }
+
+#fruit:hover {
+  animation: spin-horizontal 1.5s linear; 
+}
+
+#spice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/images/spice.png'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
+  background-size: 120px 120px; 
+  transition: transform 0.5s;
+}
+
+#spice:hover {
+  animation: spin-horizontal 1.5s linear; 
+}
+
+#flower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/images/flower.png'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
+  background-size: 120px 120px; 
+  transition: transform 0.5s; 
+}
+
+#flower:hover {
+  animation: spin-horizontal 1.5s linear; 
+}
+
+#amber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/images/amber1.png'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
+  background-size: 120px 120px; 
+  transition: transform 0.5s;
+}
+
+#amber:hover {
+  animation: spin-horizontal 1.5s linear; 
+}
+
+
+
+

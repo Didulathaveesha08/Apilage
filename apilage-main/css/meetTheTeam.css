@@ -1,0 +1,11 @@
+.heading{
+    color: #25633E;
+}
+
+
+.profile-img {
+    width: 150px;  /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the circle area without distortion */
+  }
+  
